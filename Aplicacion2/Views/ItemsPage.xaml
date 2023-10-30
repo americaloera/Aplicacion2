@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicacion2.Views.ItemsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:Aplicacion2.ViewModels"  
+             xmlns:model="clr-namespace:Aplicacion2.Models"  
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+    <!--
+      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
+      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
+    -->
+    <StackLayout Margin="20, 15,0,0">
+        <Label Text="Nombre:" FontSize="18"/>
+        <Label Text="América Guadalupe Loera López" FontSize="20"/>
+        <Label Text="Matrícula:" FontSize="18"/>
+        <Label Text="20170067" FontSize="20"/>
+        <Label Text="Carrera:" FontSize="18"/>
+        <Label Text="IDyGS" FontSize="20"/>
+        <Label Text="Grado y Sección:" FontSize="18"/>
+        <Label Text="10 A" FontSize="20"/>
+        <Label Text="Profesor:" FontSize="18"/>
+        <Label Text="Eliasib Reyes Moreno" FontSize="20"/>
+    </StackLayout>
+</ContentPage>
